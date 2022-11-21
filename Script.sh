@@ -1,6 +1,6 @@
 #!/bin/bash
-getent passwd ClienteUsuario
-if [$? -eq 0 ]
+getent passwd clienteusuario
+if [ $? -eq 0 ]
 then
 echo \"Usuário Existente\"
 else echo \"Usuario não existe\"
