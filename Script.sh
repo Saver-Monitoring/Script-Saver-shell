@@ -2,7 +2,7 @@
 echo "continuar? S\n"
 read inst
 if [ \"$inst\" == \"s\" ]
-then echo "Verificando usuario"
+echo "Verificando usuario"
 getent passwd clienteusuario
 if [ $? -eq 0 ]
 then echo "Usuário Existente"
