@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo passwd ClienteUsuario
+getent passwd ClienteUsuario
 if [$? -eq 0 ]
 then
 echo \"Usuário Existente\"
