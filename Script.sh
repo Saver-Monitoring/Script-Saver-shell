@@ -35,3 +35,4 @@ sudo apt install default-jre -y
 fi
 fi
 cd Desktop
+fi
