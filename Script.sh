@@ -3,13 +3,14 @@ echo "continuar? S\n"
 read inst
 if [ \"$inst\" == \"s\" ]
 echo "Verificando usuario"
+then
 getent passwd clienteusuario
 if [ $? -eq 0 ]
 then echo "Usuário Existente"
 else echo "Usuario não existe"
-sudo adduser ClienteUsuario
-sudo usermod -a -G sudo ClienteUsuario
-sudo su ClienteUsuario
+sudo adduser clienteUsuario
+sudo usermod -a -G sudo clienteusuario
+sudo su clienteusuario
 cd
 fi
 
@@ -37,4 +38,3 @@ cd Desktop
 git clone https://github.com/Saver-Monitoring/AplicacaoSaver.git
 cd AplicacaoSaver/banco-saver/target/
 java -jar banco-saver-1.0-SNAPSHOT-jar-with-dependencies.jar
-fi
