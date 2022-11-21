@@ -9,7 +9,7 @@ if [ $? -eq 0 ]
 then echo "Usuário Existente"
 else echo "Usuario não existe"
 sudo adduser clienteusuario
-sudo usermod -a -G sudo clienteusuario
+sudo usermod -aG sudo clienteusuario
 sudo su clienteusuario
 cd
 fi
