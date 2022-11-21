@@ -35,6 +35,3 @@ sudo apt install default-jre -y
 fi
 fi
 cd Desktop
-#git clone https://github.com/Saver-Monitoring/AplicacaoSaver.git
-cd AplicacaoSaver/banco-saver/target/
-#java -jar banco-saver-1.0-SNAPSHOT-jar-with-dependencies.jar
