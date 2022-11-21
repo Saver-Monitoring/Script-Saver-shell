@@ -8,7 +8,7 @@ getent passwd clienteusuario
 if [ $? -eq 0 ]
 then echo "Usuário Existente"
 else echo "Usuario não existe"
-sudo adduser clienteUsuario
+sudo adduser clienteusuario
 sudo usermod -a -G sudo clienteusuario
 sudo su clienteusuario
 cd
