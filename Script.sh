@@ -1,14 +1,15 @@
 #!/bin/bash
+then echo "Verificando usuario"
 getent passwd clienteusuario
 if [ $? -eq 0 ]
-then
-echo \"Usuário Existente\"
-else echo \"Usuario não existe\"
+then echo "Usuário Existente"
+else echo "Usuario não existe"
 sudo adduser ClienteUsuario
 sudo usermod -a -G sudo ClienteUsuario
 sudo su ClienteUsuario
 cd
 fi
+
 sudo apt update && sudo apt upgrade
 sudo apt-get install xrdp lxde-core lxde tigervnc-standalone-server -y
 sudo apt install rdesktop
