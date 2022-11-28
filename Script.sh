@@ -66,6 +66,7 @@ sudo apt install default-jre -y
 sleep 2
 echo "Java instalado"
 java --version
+cd
 sleep 2
 clear
 fi
