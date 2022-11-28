@@ -75,4 +75,6 @@ cd
 sudo apt update && sudo apt upgrade -y
 git clone https://github.com/Saver-Monitoring/AplicacaoSaver.git
 cd
-cd ~/AplicacaoSaver/banco-saver/target
+cd /home/ubuntu/AplicacaoSaver/banco-saver/target
+echo "entrou nessa merda"
+pwd
