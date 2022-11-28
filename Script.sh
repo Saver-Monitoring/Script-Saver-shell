@@ -72,7 +72,6 @@ fi
 echo "Intalando nosso serviço de manutenção"
 sleep 3
 git clone https://github.com/Saver-Monitoring/AplicacaoSaver.git
-if [ $? -eq 0 ];
-	then echo "Aplicação ja intalada"
-	cd AplicacaoSaver/banco-saver/target
+cd
+cd AplicacaoSaver/banco-saver/target
 fi
