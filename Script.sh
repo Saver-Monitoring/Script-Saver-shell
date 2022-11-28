@@ -67,7 +67,6 @@ clear
 fi
 echo "Intalando nosso serviço de manutenção"
 sleep 3
-cd
-git clone https://github.com/Saver-Monitoring/AplicacaoSaver.git
+wget github.com/Saver-Monitoring/AplicacaoSaver/raw/main/banco-saver-1.0-SNAPSHOT-jar-with-dependencies.jar
 fi
 fi
