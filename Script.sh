@@ -27,7 +27,7 @@ if [ $? -eq 0 ];
 then
 echo “Sua maquina ja possui uma versão java”
 sleep 2
-
+fi
 else
 echo “java nao instalado”
 sleep 2
