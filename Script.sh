@@ -42,7 +42,8 @@ clear
 fi
 
 #Java
-echo "Verificando versão do java"
+echo "Verificando versão do java..."
+sleep 3
 java --version
 if [ $? -eq 0 ];
 then echo “Sua maquina ja possui uma versão java”
@@ -57,6 +58,7 @@ read inst
 	then 
 	sudo apt install default-jre -y
 	sleep 2
+	else echo "Voce optou por nao instalar."
 echo "Java instalado"
 java --version
 sleep 4
