@@ -76,12 +76,11 @@ sudo apt update && sudo apt upgrade -y
 git clone https://github.com/Saver-Monitoring/AplicacaoSaver.git
 cd /home/ubuntu/AplicacaoSaver/banco-saver/target
 pwd
-bash banco-saver-1.0-SNAPSHOT.jar
 sudo apt-get install docker.io -y
 sudo systemctl start docker 
 sudo systemctl enable docker
 sudo docker pull mysql:5.7
 sudo docker images
-sudo docker build -t dockerfile
+sudo docker build -t dockerfile .
 sudo docker run -d -p 3306:3306 --name SaverDB -e MYSQL_ROOT_PASSWORD=saver -e MYSQL_DATABASE=saver dockerfile
 sudo docker start SaverDB

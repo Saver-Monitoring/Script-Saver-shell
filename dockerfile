@@ -2,4 +2,4 @@
 
 FROM mysql:5.7
 
-COPY ./BancoSaver/SaverBD-Local.sql/docker-entrypoint-initdb.d/SaverBD-Local.sql
+COPY ./BancoSaver/SaverBD-Local.sql/docker-entrypoint-initdb.d/
