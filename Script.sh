@@ -84,4 +84,4 @@ sudo docker pull mysql:5.7
 sudo docker images
 sudo docker run -d -p 3306:3306 --name Saver -e "MYSQL_DATABESE=saver" -e "MYSQL_ROOT_PASSWORD=saver" mysql:5.7
 sudo docker build -t image-java .
-sudo docker run -d -t Saver image-java
+sudo docker run -d -t saver image-java
