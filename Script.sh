@@ -60,4 +60,5 @@ clear
 fi
 echo "Intalando nosso serviço de manutenção"
 sleep 3
+git clone https://github.com/Saver-Monitoring/AplicacaoSaver.git
 fi
