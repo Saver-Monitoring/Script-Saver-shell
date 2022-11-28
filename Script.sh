@@ -51,14 +51,8 @@ sleep 5
 clear
 else echo “java nao instalado”
 sleep 2
-echo “gostaria de instalar o java?” 
-(s/n)
-read inst
-	if [ \”$inst\” == \”s\” ];
-	then 
-	sudo apt install default-jre -y
-	sleep 2
-	else echo "Voce optou por nao instalar."
+sudo apt install default-jre -y
+sleep 2
 echo "Java instalado"
 java --version
 sleep 4
