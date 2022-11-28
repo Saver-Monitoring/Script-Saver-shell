@@ -17,7 +17,6 @@ then echo "Usuário Existente"
 else echo "Criando um Usuario"
 sudo adduser savercliente
 sudo usermod -aG sudo savercliente
-sudo su savercliente
 cd
 fi
 
