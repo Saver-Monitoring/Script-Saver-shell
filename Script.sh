@@ -43,7 +43,7 @@ fi
 
 #Java
 echo "Verificando versão do java"
-java -version
+java --version
 if [ $? -eq 0 ];
 then echo “Sua maquina ja possui uma versão java”
 sleep 5
