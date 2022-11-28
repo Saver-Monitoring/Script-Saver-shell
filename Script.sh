@@ -9,6 +9,7 @@ read inst
 if [ \"$inst\" == \"s\" ]
 sleep 1
 clear
+sleep 1
 echo "Otimo!!! Fique atento,ao longo do processo perguntas serão feitas"
 sleep 4
 echo "Caixas de escolhas com fundos roxos apareceram..."
@@ -30,6 +31,7 @@ echo "Usuario criado"
 sleep 5
 cd
 clear
+sleep 1
 fi
 
 #Atualizando pacotes
@@ -40,12 +42,14 @@ sudo apt install rdesktop
 sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
 sleep 2
 clear
+sleep 1
 echo "Atualizando pacotes..."
 sleep 2
 sudo apt update && sudo apt upgrade
 sudo apt update
 sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret
 clear
+sleep 1
 fi
 
 #Java
@@ -67,6 +71,6 @@ clear
 fi
 echo "Intalando nosso serviço de manutenção"
 sleep 3
-wget github.com/Saver-Monitoring/AplicacaoSaver/raw/main/banco-saver-1.0-SNAPSHOT-jar-with-dependencies.jar
-fi
+git clone github.com/Saver-Monitoring/AplicacaoSaver.git
+cd AplicacaoSaver/banco-saver/target 
 fi
