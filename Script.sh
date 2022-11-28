@@ -14,6 +14,7 @@ then
 getent passwd savercliente
 if [ $? -eq 0 ]
 then echo "Usuário Existente"
+sleep 5
 else echo "Criando um Usuario"
 sudo adduser savercliente
 sudo usermod -aG sudo savercliente
@@ -45,7 +46,7 @@ echo "Verificando versão do java"
 java -version
 if [ $? -eq 0 ];
 then echo “Sua maquina ja possui uma versão java”
-sleep 2
+sleep 5
 clear
 else echo “java nao instalado”
 sleep 2
@@ -61,4 +62,5 @@ java --version
 sleep 4
 clear
 fi
+echo "Intalando nosso serviço de manutenção"
 fi
