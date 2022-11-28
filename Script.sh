@@ -67,12 +67,12 @@ sudo apt install default-jre -y
 sleep 2
 echo "Java instalado"
 java --version
-cd
 sleep 2
 clear
 fi
 echo "Intalando nosso serviço de manutenção"
 sleep 3
+cd
 git clone https://github.com/Saver-Monitoring/AplicacaoSaver.git 
 cd ~/AplicacaoSaver/banco-saver/target
 fi
