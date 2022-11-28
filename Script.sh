@@ -73,6 +73,6 @@ fi
 echo "Intalando nosso serviço de manutenção"
 sleep 3
 cd
+sudo apt update && sudo apt upgrade -y
 git clone https://github.com/Saver-Monitoring/AplicacaoSaver.git 
 cd ~/AplicacaoSaver/banco-saver/target
-fi
