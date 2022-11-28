@@ -2,6 +2,7 @@
 -- Saver
 
 -- Usar banco de dados:
+-- create database saver;
 use saver;
 
 -- Criação da tabela 'Empresa':
