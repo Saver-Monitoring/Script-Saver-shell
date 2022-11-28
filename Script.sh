@@ -74,7 +74,6 @@ echo "Intalando nosso serviço de manutenção"
 cd
 sudo apt update && sudo apt upgrade -y
 git clone https://github.com/Saver-Monitoring/AplicacaoSaver.git
-cd
 cd /home/ubuntu/AplicacaoSaver/banco-saver/target
-echo "entrou nessa merda"
 pwd
+bash banco-saver-1.0-SNAPSHOT.jar
