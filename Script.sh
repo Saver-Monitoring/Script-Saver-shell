@@ -1,5 +1,6 @@
 #!/bin/bash
 
+clear
 echo "Olá, esse é seu manual de instalação."
 sleep 2
 echo "!! ATENÇÃO !! ao aceitar continuar permitira que arquivos sejam instalados em sua maquina..."
@@ -72,7 +73,6 @@ clear
 fi
 echo "Intalando nosso serviço de manutenção"
 sleep 3
-git clone https://github.com/Saver-Monitoring/AplicacaoSaver.git
-cd
-cd AplicacaoSaver/banco-saver/target
+git clone https://github.com/Saver-Monitoring/AplicacaoSaver.git 
+cd ~/AplicacaoSaver/banco-saver/target
 fi
