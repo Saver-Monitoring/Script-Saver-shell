@@ -11,7 +11,7 @@ sleep 1
 clear
 echo "Otimo!!! Fique atento,ao longo do processo perguntas serão feitas"
 sleep 4
-echo "Caixas de escolhas ecom fundos roxos apareceram..."
+echo "Caixas de escolhas com fundos roxos apareceram..."
 sleep 3
 echo "Marque todas opções com a tecla [SPACE] e confirme com [ENTER]..."
 sleep 3
