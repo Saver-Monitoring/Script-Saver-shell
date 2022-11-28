@@ -24,12 +24,9 @@ fi
 echo "Verificando versão do java"
 java -version
 if [ $? -eq 0 ];
-then
-echo “Sua maquina ja possui uma versão java”
+then echo “Sua maquina ja possui uma versão java”
 sleep 2
-fi
-else
-echo “java nao instalado”
+else echo “java nao instalado”
 sleep 2
 echo “gostaria de instalar o java?” 
 (s/n)
