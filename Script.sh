@@ -30,7 +30,6 @@ sudo usermod -aG sudo savercliente
 sleep 2
 echo "Usuario criado"
 sleep 5
-cd
 clear
 sleep 1
 fi
@@ -59,20 +58,20 @@ sleep 3
 java --version
 if [ $? -eq 0 ];
 then echo “Sua maquina ja possui uma versão java”
-sleep 5
+#sleep 5
 clear
 else echo “java nao instalado”
-sleep 2
+#sleep 2
 sudo apt install default-jre -y
-sleep 2
+#sleep 2
 echo "Java instalado"
 java --version
-sleep 2
+#sleep 2
 clear
 fi
 echo "Intalando nosso serviço de manutenção"
-sleep 3
+#sleep 3
 cd ..
 sudo apt update && sudo apt upgrade -y
 git clone https://github.com/Saver-Monitoring/AplicacaoSaver.git
-cd /AplicacaoSaver/banco-saver/target
+cd ~/AplicacaoSaver/banco-saver/target
