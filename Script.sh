@@ -27,6 +27,7 @@ if [ $? -eq 0 ];
 then
 echo “Sua maquina ja possui uma versão java”
 sleep 2
+
 else
 echo “java nao instalado”
 sleep 2
@@ -57,8 +58,6 @@ sudo apt update && sudo apt upgrade
 sudo apt update
 sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret
 clear
-fi
-cd Desktop
 fi
 
 
