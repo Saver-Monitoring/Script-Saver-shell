@@ -4,11 +4,11 @@ echo "Olá, esse é seu manual de instalação."
 sleep 2
 echo "!! ATENÇÃO !! ao aceitar continuar permitira que arquivos sejam instalados em sua maquina..."
 sleep 2
-echo "continuar? S\n"
+echo "Gostaria de continuar? S\n"
 read inst
 if [ \"$inst\" == \"s\" ]
-echo "Otimo!!!"
-sleep 3
+echo "Otimo!!! Fique atento,ao longo do processo perguntas serão feitas"
+sleep 4
 echo "Verificando usuario"
 then
 getent passwd savercliente
@@ -63,4 +63,5 @@ sleep 4
 clear
 fi
 echo "Intalando nosso serviço de manutenção"
+sleep 3
 fi
