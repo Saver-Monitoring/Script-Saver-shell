@@ -59,7 +59,3 @@ sudo apt update
 sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret
 clear
 fi
-
-
-
-
