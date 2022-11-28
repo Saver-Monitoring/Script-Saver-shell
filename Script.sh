@@ -20,27 +20,6 @@ sudo usermod -aG sudo savercliente
 cd
 fi
 
-#Java
-echo "Verificando versão do java"
-java -version
-if [ $? -eq 0 ];
-then echo “Sua maquina ja possui uma versão java”
-sleep 2
-else echo “java nao instalado”
-sleep 2
-echo “gostaria de instalar o java?” 
-(s/n)
-read inst
-if [ \”$inst\” == \”s\” ];
-then
-sudo apt install default-jre -y
-sleep 2
-echo "Java instalado"
-java --version
-sleep 4
-clear
-fi
-
 #Atualizando pacotes
 echo "Instalando interface..."
 sleep 2
@@ -54,6 +33,27 @@ sleep 2
 sudo apt update && sudo apt upgrade
 sudo apt update
 sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret
+clear
+fi
+
+#Java
+echo "Verificando versão do java"
+java -version
+if [ $? -eq 0 ];
+then echo “Sua maquina ja possui uma versão java”
+sleep 2
+else echo “java nao instalado”
+sleep 2
+echo “gostaria de instalar o java?” 
+(s/n)
+read inst
+	if [ \”$inst\” == \”s\” ];
+	then 
+	sudo apt install default-jre -y
+	sleep 2
+echo "Java instalado"
+java --version
+sleep 4
 clear
 fi
 fi
