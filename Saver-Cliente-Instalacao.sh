@@ -83,5 +83,5 @@ sudo systemctl enable docker
 sudo docker pull mysql:5.7
 sudo docker images
 sudo docker build -t dockerfile .
-sudo docker run -d -p 3306:3306 --name SaverDB -e "MYSQL_DATABASE=Gabs" -e "MYSQL_ROOT_PASSWORD=#Gf43944219856" mysql:5.7
+sudo docker run -d -p 3306:3306 --name SaverDB -e MYSQL_ROOT_PASSWORD=saver -e MYSQL_DATABASE=saver dockerfile
 sudo docker start SaverDB
