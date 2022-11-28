@@ -17,7 +17,11 @@ then echo "Usuário Existente"
 else echo "Criando um Usuario"
 sudo adduser savercliente
 sudo usermod -aG sudo savercliente
+sleep 2
+echo "Usuario criado"
+sleep 5
 cd
+clear
 fi
 
 #Atualizando pacotes
@@ -42,6 +46,7 @@ java -version
 if [ $? -eq 0 ];
 then echo “Sua maquina ja possui uma versão java”
 sleep 2
+clear
 else echo “java nao instalado”
 sleep 2
 echo “gostaria de instalar o java?” 
