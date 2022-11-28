@@ -85,3 +85,6 @@ fkRack int,
 foreign key (fkComputador) references computador(idComputador),
 foreign key (fkRack) references rack(idRack)
 );
+
+insert into empresa values (2,"EmpresaTest2","54321987654321","emrpesa2@gmail.com","123","12345678", "Rua da Empresa dois", 56);
+select * from empresa;
