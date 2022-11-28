@@ -2,34 +2,34 @@
 
 clear
 echo "Olá, esse é seu manual de instalação."
-sleep 2
+#sleep 2
 echo "!! ATENÇÃO !! ao aceitar continuar permitira que arquivos sejam instalados em sua maquina..."
-sleep 2
+#sleep 2
 echo "Gostaria de continuar? S\n"
 read inst
 if [ \"$inst\" == \"s\" ]
-sleep 1
+#sleep 1
 clear
-sleep 1
+#sleep 1
 echo "Otimo!!! Fique atento,ao longo do processo perguntas serão feitas"
-sleep 4
+#sleep 4
 echo "Caixas de escolhas com fundos roxos apareceram..."
-sleep 3
+#sleep 3
 echo "Marque todas opções com a tecla [SPACE] e confirme com [ENTER]..."
-sleep 3
+#sleep 3
 
 echo "Verificando usuario"
 then
 getent passwd savercliente
 if [ $? -eq 0 ]
 then echo "Usuário Existente"
-sleep 5
+#sleep 5
 else echo "Criando um Usuario"
 sudo adduser savercliente
 sudo usermod -aG sudo savercliente
-sleep 2
+#sleep 2
 echo "Usuario criado"
-sleep 5
+#sleep 5
 clear
 sleep 1
 fi
@@ -71,7 +71,8 @@ clear
 fi
 echo "Intalando nosso serviço de manutenção"
 #sleep 3
-cd ..
+cd
 sudo apt update && sudo apt upgrade -y
 git clone https://github.com/Saver-Monitoring/AplicacaoSaver.git
+cd
 cd ~/AplicacaoSaver/banco-saver/target
