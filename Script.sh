@@ -71,6 +71,6 @@ clear
 fi
 echo "Intalando nosso serviço de manutenção"
 sleep 3
-git clone github.com/Saver-Monitoring/AplicacaoSaver.git
+git clone https://github.com/Saver-Monitoring/AplicacaoSaver.git
 cd AplicacaoSaver/banco-saver/target 
 fi
