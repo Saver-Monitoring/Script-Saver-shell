@@ -9,12 +9,13 @@ read inst
 if [ \"$inst\" == \"s\" ]
 sleep 1
 clear
-cd
 echo "Otimo!!! Fique atento,ao longo do processo perguntas serão feitas"
 sleep 4
 echo "Caixas de escolhas ecom fundos roxos apareceram..."
 sleep 3
 echo "Marque todas opções com a tecla [SPACE] e confirme com [ENTER]..."
+sleep 3
+
 echo "Verificando usuario"
 then
 getent passwd savercliente
@@ -62,6 +63,8 @@ sleep 2
 echo "Java instalado"
 java --version
 sleep 4
+cd
+sleep 2
 clear
 fi
 echo "Intalando nosso serviço de manutenção"
