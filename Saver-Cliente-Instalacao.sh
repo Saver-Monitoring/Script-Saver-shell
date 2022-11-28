@@ -85,3 +85,4 @@ cd /home/ubuntu/Script-Saver-shell
 sudo docker build -t dockerfile .
 sudo docker run -d -p 3306:3306 --name SaverDB -e MYSQL_ROOT_PASSWORD=saver -e MYSQL_DATABASE=saver mysql:5.7
 sudo docker start SaverDB
+sudo docker exec -it SaverDB bash
