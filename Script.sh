@@ -81,6 +81,7 @@ sudo apt-get install docker.io -y
 sudo systemctl start docker 
 sudo systemctl enable docker
 sudo docker pull mysql:5.7
+sudo docker images
 sudo docker run -d -p 3306:3306 --name Saver -e "MYSQL_DATABESE=saver" -e "MYSQL_ROOT_PASSWORD=saver" mysql:5.7
 sudo docker build -t image-java .
-sudo docker run -d -t offbreach image-java
+sudo docker run -d -t Saver image-java
