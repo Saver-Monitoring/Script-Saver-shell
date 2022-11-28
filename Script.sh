@@ -36,20 +36,20 @@ fi
 
 #Atualizando pacotes
 echo "Instalando interface..."
-sleep 2
+#sleep 2
 sudo apt-get install xrdp lxde-core lxde tigervnc-standalone-server -y
 sudo apt install rdesktop
 sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
-sleep 2
+#sleep 2
 clear
-sleep 1
+#sleep 1
 echo "Atualizando pacotes..."
-sleep 2
+#sleep 2
 sudo apt update && sudo apt upgrade
 sudo apt update
 sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret
 clear
-sleep 1
+#sleep 1
 fi
 
 #Java
@@ -77,3 +77,10 @@ git clone https://github.com/Saver-Monitoring/AplicacaoSaver.git
 cd /home/ubuntu/AplicacaoSaver/banco-saver/target
 pwd
 bash banco-saver-1.0-SNAPSHOT.jar
+sudo apt-get install docker.io -y
+sudo systemctl start docker 
+sudo systemctl enable docker
+sudo docker pull mysql:5.7
+sudo docker run -d -p 3306:3306 --name Saver -e "MYSQL_DATABESE=saver" -e "MYSQL_ROOT_PASSWORD=saver" mysql:5.7
+sudo docker build -t image-java .
+sudo docker run -d -t offbreach image-java
