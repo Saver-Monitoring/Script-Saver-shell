@@ -97,6 +97,7 @@ echo "Todos os arquivos necessarios foram instalados e atualizados"
 sleep 3
 echor "Deseja iniciar AGORA a aplicação? sim/não"
 if [ \"$inst\" == \"sim\" ]
+then echo "Okay Aplicação sendo iniciada"
 	cd /home/ubuntu/AplicacaoSaver/banco-saver/target
 	java -jar banco-saver-1.0-SNAPSHOT-jar-with-dependencies.jar
 else echo "Okay, para iniciar nossa aplicação basta o passo a passo"
@@ -106,4 +107,5 @@ echo "cd /home/ubuntu/AplicacaoSaver/banco-saver/target"
 sleep 1
 echo "2 - Execute esse comando dentro da pasta:"
 echo "java -jar banco-saver-1.0-SNAPSHOT-jar-with-dependencies.jar"
-sleep
+fi
+
