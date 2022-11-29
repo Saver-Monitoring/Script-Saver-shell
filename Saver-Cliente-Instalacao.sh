@@ -95,7 +95,8 @@ clear
 sleep 2
 echo "Todos os arquivos necessarios foram instalados e atualizados"
 sleep 3
-echor "Deseja iniciar AGORA a aplicação? sim/não"
+echo "Deseja iniciar AGORA a aplicação? sim/não"
+read inst
 if [ \"$inst\" == \"sim\" ]
 then echo "Okay Aplicação sendo iniciada"
 	cd /home/ubuntu/AplicacaoSaver/banco-saver/target
